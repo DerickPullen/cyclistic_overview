@@ -1,6 +1,7 @@
 Cyclistic Bike-Share Case Study (Sep 2024 – Aug 2025)
 
 Business Task
+
 Cyclistic, a Chicago-based bike-share company, wants to grow by turning more casual riders (single/day-pass users) into annual members.
 The question I explored was: How do annual members and casual riders use Cyclistic bikes differently?
 
