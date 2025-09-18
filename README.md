@@ -1,43 +1,29 @@
 Cyclistic Bike-Share Case Study (Sep 2024 – Aug 2025)
 
 Business Task
-
 Cyclistic, a Chicago-based bike-share company, wants to grow by turning more casual riders (single/day-pass users) into annual members.
 The question I explored was: How do annual members and casual riders use Cyclistic bikes differently?
 
 Project Setup
-
-Data Source: 12 months of Divvy/Cyclistic trip data (Sep 2024 – Aug 2025).
-
-Storage & Processing: Data stored in Google Cloud Storage (GCS) → cleaned and aggregated in BigQuery.
-
-Exports for Tableau: Key summary tables exported as CSVs (agg_kpis, agg_monthly, agg_hour_day, agg_hour_profile, agg_bike_type).
-
-Visualization: Dashboards built in Tableau Public.
+- Data Source: 12 months of Divvy/Cyclistic trip data (Sep 2024 – Aug 2025).
+- Storage & Processing: Data stored in Google Cloud Storage (GCS) → cleaned and aggregated in BigQuery.
+- Exports for Tableau: Key summary tables exported as CSVs (agg_kpis, agg_monthly, agg_hour_day, agg_hour_profile, agg_bike_type).
+- Visualization: Dashboards built in Tableau Public.
 
 Cleaning & Processing Steps
-
-Removed nulls and invalid rides (end before start).
-
-Filtered out rides shorter than 1 min or longer than 24 hrs.
+- Removed nulls and invalid rides (end before start).
+- Filtered out rides shorter than 1 min or longer than 24 hrs.
 
 Added calculated columns:
+- ride_length_min (trip duration in minutes)
+- day_of_week (1=Sunday … 7=Saturday)
+- hour_of_day (0–23)
+- is_weekend (true/false)
+- yyyymm (year-month).
+- Built aggregated summary tables for KPIs, ride patterns, and bike type mix.
 
-ride_length_min (trip duration in minutes)
-
-day_of_week (1=Sunday … 7=Saturday)
-
-hour_of_day (0–23)
-
-is_weekend (true/false)
-
-yyyymm (year-month).
-
-Built aggregated summary tables for KPIs, ride patterns, and bike type mix.
-
-🛠️ Cleaning & Processing Steps
-
-Removed nulls and invalid rides (end before start).
+Cleaning & Processing Steps
+- Removed nulls and invalid rides (end before start).
 
 Filtered out rides shorter than 1 min or longer than 24 hrs.
 
