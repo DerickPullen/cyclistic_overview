@@ -78,6 +78,5 @@ Weekend Rider Conversion
 - Provide e-bike credits or upgrades for new members, appealing to casual riders who already favor e-bikes
 
 About This Project
-- Analyst: Derick Pullen
-- Tools used: BigQuery, Google Cloud Storage, Tableau Public, Excel/Sheets (light checks)
+- Tools used: BigQuery, Google Cloud Storage, Tableau Public, Sheets (light checks)
 - Goal: Demonstrate full data analysis workflow (Ask → Prepare → Process → Analyze → Share → Act)
